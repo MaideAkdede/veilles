@@ -1,0 +1,139 @@
+body{
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+  font-family:  Avenir, 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+h1{
+  font-size: 2.625em;
+  font-family: Gotham, 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  font-weight: Bold;
+  letter-spacing: 3.5px;
+  line-height: 1.19;
+  margin: 0;
+  padding: 0.75em 0;
+  text-transform: uppercase;
+}
+h3{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hidden-title{
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+nav{
+  padding: 0.25em 0.9em;
+  height: 100%;
+}
+nav ul{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul li{
+  padding: 0.25em;
+  margin-left: 1em;
+}
+nav ul li:nth-child(1){
+  margin-right: auto;
+  border: none;
+}
+li.menu{
+  border-left: 0.2px solid rgb(181, 181, 181);
+  padding-left: 19px;
+}
+.menu a{
+  color: black;
+  display: block;
+  vertical-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Gotham, 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  font-weight: Bold;
+
+}
+.div1{
+  min-height: 150vh;
+  background-color: black;
+  color: white;
+}
+.div1 p{
+  font-size: 1.3em;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+.yellow-line{
+  background-color: #fc0;
+  height: 4px;
+  line-height: 0;
+  margin: 21px auto 0;
+  width: 30px;
+}
+.article{
+  position: relative;
+  margin: 2em auto;
+  min-width: 50px;
+  height: 450px;
+  max-width: 650px;
+  box-shadow: 4px 4px #fc0;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bcg-women.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
+.article:hover .img, .article:focus .img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.text{
+  position: absolute;
+  background-color: transparent;
+  padding-left: 1.5em;
+  text-align: left;
+}
+.text p.read,.text .categories{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.35em;
+  margin: 10px 0;
+}
+.text h1{
+  transition: all 0.5s ease;
+  font-size: 40px;
+  padding: 0;
+}
+.text .cat-title{
+  margin-left: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.sameLine p{
+  display: inline-block;
+  margin-bottom: 0;
+}
+.spacing{
+  margin: 2.5em;
+}
+@media screen and (max-width: 750px){
+  li a span{
+    display: none;
+  }
+  .text h1 {
+    font-size: 28px;
+  }
+}
